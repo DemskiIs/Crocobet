@@ -6,7 +6,7 @@ import { Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  loadingMode: boolean = true 
+  loadingMode: boolean = false 
   title = 'crocobet';
 
   togglePreloader(isLoading: boolean) {
