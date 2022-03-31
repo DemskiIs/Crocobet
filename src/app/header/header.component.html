@@ -1,0 +1,12 @@
+<header>
+    <a routerLink=''>
+        <img src="https://m.crocobet.com/assets/images/crocobet-logo.png" />
+    </a>
+    <div ngClass="registretion">
+        <app-registration *ngIf="!isAuth" (onAutorization)="requestAutorization($event)"></app-registration>
+        <div *ngIf="isAuth" ngClass="authUser">
+            <div ngClass="name" >{{email}}</div>
+            <button (click)="logOut()">გამოსვლა</button>
+        </div>
+    </div>
+</header>

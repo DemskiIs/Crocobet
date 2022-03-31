@@ -1,0 +1,32 @@
+.users {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: rgba(167, 97, 97, 0.061);
+    border-top: 2px solid rgb(172, 118, 118);
+    margin-top: 20px;
+}
+
+.img {
+    width: 130px;
+    border: 2px solid gray;
+    border-radius: 15px;
+}
+
+
+
+.user {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    
+}
+img {
+    width: 180px;
+    border: 1px gray solid;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+}

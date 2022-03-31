@@ -1,0 +1,13 @@
+.registerBlock {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    justify-items: stretch;
+}
+
+input {
+    border: 1px solid #323c49;
+    border-radius: 4px;
+    background-color: transparent;
+    color: black;
+    margin: 5px;    
+}

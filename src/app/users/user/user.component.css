@@ -1,0 +1,67 @@
+.user {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "mainInfo adress";
+    padding: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.mainInfo {
+    grid-area: mainInfo;
+    display: grid;
+    justify-items: center;
+}
+.mainInfo img {
+    width: 200px;
+    border: 2px solid gray;
+    border-radius: 15px;
+}
+
+.names {
+    background-color: rgba(167, 97, 97, 0.061);
+    padding: 10px;
+    text-align: start;
+    border-top: 2px solid rgb(172, 118, 118);
+}
+.name {
+    border-bottom: 1px solid rgb(172, 118, 118);
+    font-size: 18px;
+    padding: 5px;
+    padding-bottom: 2px;
+}
+
+.adress {
+    background-color: rgba(167, 97, 97, 0.061);
+    padding: 10px;
+    text-align: start;
+    border-top: 2px solid rgb(172, 118, 118);
+    height: min-content
+}
+
+.adres {
+    border-bottom: 1px solid rgb(172, 118, 118);
+    font-size: 18px;
+    padding: 5px;
+    padding-bottom: 2px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    ;
+    
+}
+
+.company{
+    padding-top: 10px;
+}
+
+button{
+    padding: 5px;
+    margin: 5px;
+    color: whitesmoke;
+    border: none
+
+}
+.header {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 5px;
+}

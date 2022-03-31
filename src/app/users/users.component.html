@@ -1,0 +1,8 @@
+<div ngClass="users">
+    <div *ngFor="let user of users" ngClass="user">
+        <img src={{defaultImg}} />
+        <a routerLink={{path}}>
+            <div [appUserStyles]="'#ee5f5f'" [default]="'black'"  (click)="requestUser(user.id)">{{user.name}}</div>
+        </a>
+    </div>
+</div>

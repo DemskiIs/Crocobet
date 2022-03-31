@@ -1,0 +1,75 @@
+<div ngClass="user">
+    <div ngClass="mainInfo">
+        <img src={{defaultImg}} />
+        <a routerLink={{path}}>
+            <button [appUserStyles]="'#ee5f5f'" [default]="'whitesmoke'">posts</button>
+            <button [appUserStyles]="'#ee5f5f'" [default]="'whitesmoke'">albums</button>
+            <button [appUserStyles]="'#ee5f5f'" [default]="'whitesmoke'">todos</button>
+        </a>
+        <div ngClass="names">
+            <div ngClass="name">
+                <div>name</div>
+                <div>{{user.name}}</div>
+            </div>
+            <div ngClass="name">
+                <div>user name</div>
+                <div>{{user.username}}</div>
+            </div>
+            <div ngClass="name">
+                <div>email</div>
+                <div>{{user.email}}</div>
+            </div>
+            <div ngClass="name">
+                <div>phone</div>
+                <div>{{user.phone}}</div>
+            </div>
+            <div ngClass="name">
+                <div>website</div>
+                <div>{{user.website}}</div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="!smallMode" ngClass="adress">
+        <div ngClass="header">Adress</div>
+        <div>
+            <div ngClass="adres">
+                <div>street</div>
+                <div> {{user.address.street}}</div>
+            </div>
+            <div ngClass="adres">
+                <div>suite</div>
+                <div>{{user.address.suite}}</div>
+            </div>
+            <div ngClass="adres">
+                <div>city</div>
+                <div>{{user.address.city}}</div>
+            </div>
+            <div ngClass="adres">
+                <div>zipcode</div>
+                <div>{{user.address.zipcode}}</div>
+            </div>
+
+            <div ngClass="adres">
+                <div>lat</div>
+                <div>{{user.address.geo.lat}}</div>
+            </div>
+            <div ngClass="adres">
+                <div>lng</div>
+                <div>{{user.address.geo.lng}}</div>
+            </div>
+        </div>
+        <div ngClass="company">
+            <div ngClass="header">Company</div>
+            <div ngClass="name">
+                <div>name</div><div>{{user.company.name}}</div>
+            </div>
+            <div ngClass="name">
+                <div>catch phrase</div><div>{{user.company.catchPhrase}}</div>
+            </div>
+            <div ngClass="name">
+                <div>bs</div><div>{{user.company.bs}}</div>
+            </div> 
+        </div>
+    </div>
+    
+</div>

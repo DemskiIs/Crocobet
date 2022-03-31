@@ -1,0 +1,19 @@
+<div ngClass="content">
+    <app-user [smallMode]="true"></app-user>
+    <div ngClass="posts">
+        <div ngClass="post" *ngFor="let post of posts">
+            <div ngClass="background">
+                <div class="title">{{post.title}}</div>
+                <div class="body">{{post.body}}</div>
+                <button (click)="requestPostComents(post.id)" [appUserStyles]="'#ee5f5f'">
+                    coments
+                </button>
+            </div>
+            <div ngClass="coments" *ngIf="postId && postId == post.id">
+                <app-coments [postId]="post.id"></app-coments>
+            </div>
+            
+        </div>
+
+    </div>
+</div>

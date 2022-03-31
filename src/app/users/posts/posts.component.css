@@ -1,0 +1,37 @@
+.content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.posts {
+    padding: 15px;
+}
+.post {
+    
+    padding: 10px;
+    padding-top: 0px;
+    text-align: start;
+    border-top: 2px solid rgb(172, 118, 118);
+    margin: 15px;
+}
+.title {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+button{
+    padding: 5px;
+    margin-top: 10px;
+}
+.coments{
+    
+    padding: 10px;
+    text-align: start;
+    border-right: 2px solid rgb(172, 118, 118);
+    border-left: 2px solid rgb(172, 118, 118);
+    margin: 5px;
+}
+.background{
+    background-color: rgba(167, 97, 97, 0.061);
+    border-radius: 5;
+}

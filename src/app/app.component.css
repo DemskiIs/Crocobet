@@ -1,0 +1,10 @@
+.appContent {
+    background-color: rgba(180, 180, 180, 0.26);
+}
+
+.preloader{
+    display: grid;
+    justify-items: center;
+    font-size: 25px;
+    padding-top: 5%;
+}

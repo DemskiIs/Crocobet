@@ -1,0 +1,8 @@
+<app-header></app-header>
+<div *ngIf="!loadingMode" class="appContent">
+    <router-outlet ></router-outlet>
+</div>
+<div *ngIf="loadingMode" ngClass="preloader">
+    <img src="https://onlinecasinos.ge/wp-content/uploads/2020/10/crocobet.png">
+    <div>Pliz Weit ...Loading In Progress</div>
+</div>
